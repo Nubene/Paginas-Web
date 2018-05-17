@@ -3,7 +3,6 @@ body
     header
         El elemento de HTML Header (&lt;header>) representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.
 
-
     nav
         The HTML <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
         Para todo lo que es una ayuda de navegación del sitio. Icluir las redes sociales (si está relacionado).

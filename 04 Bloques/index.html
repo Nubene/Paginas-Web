@@ -1,75 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- Segundo Ejercicio Curso -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Pintor Ingles Figurativo">
     <title>Bloques html</title>
     <style>
-    .separado {
-        padding-left:5rem 
-    } 
-    .h2 {
-        display: block;
-        font-size: 1.5rem;
-    }
-    .vertebrados {
-        list-style-type: square;
-    }
-    
+        .separado {
+            padding-left: 5rem;
+        }
+        .h2 {
+            display: block;
+            font-size: 1.5rem;
+        }
+        .footer {
+            border-top: 2px solid coral;
+            margin-top: 1rem;
+            padding-top: 1rem;
+        }
+        .vertebrados {
+            list-style: decimal;
+        }
+        .dialog {
+           display: none;
+        }
+        .verde {
+            background-color: chartreuse;
+            border: 0px solid;
+        }
+        dd,
+        dt {
+            display: inline;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>
-            Introducción al html. 
-            <span class="h2">Uso de bloques en html</span>
+        <h1>Introducción al HTML
+            <span class="h2">Uso de bloques en HTML</span>
         </h1>
     </header>
-    <nav></nav>
+    <header>
+        <h1>Introducción al HTML</h1>
+        <p class="h2">Uso de bloques en HTML</p>
+    </header>
+    <!-- La siguiente es dudosamente estandar, depende de los autores -->
+    <header>
+        <h1>Introducción al HTML</h1>
+        <h2>Uso de bloques en HTML</h2>
+    </header>
+    <nav>
+        <hr>
+    </nav>
     <main>
         <article>
-            <h2>Tipods de Parrafo</h2>
-                <pre>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Molestiae a rem rerum nemo corporis, voluptatem dolorem aut ipsam, libero consequuntur molestias nulla doloremque nihil odit laboriosam vitae recusandae excepturi accusamus.
-                </pre>
-            <h2>Tópicos</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ab a aperiam in impedit quidem repellendus perspiciatis cupiditate harum ut cumque quae provident repellat, animi quam eius asperiores! Exercitationem, quas?
-                </p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ab a aperiam in impedit quidem repellendus perspiciatis cupiditate harum ut cumque quae provident repellat, animi quam eius asperiores! Exercitationem, quas?
-                </p>  
+            <h2>Tipos de parrafos</h2>
+            <pre>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Veritatis temporibus nulla officia quidem earum. 
+                Eos corporis amet sit. 
+                Aut nam voluptatum incidunt temporibus.
+                Possimus libero neque voluptates repellat autem aliquid!</pre>
+            <p>Numquam
+                <span class="separado">facilis</span> rem eveniet ex veniam libero
+                <br> minus ipsa veritatis nemo reiciendis
+                <br> fugiat animi incidunt obcaecati consequatur
+                <br> expedita exercitationem, ipsum minima.
+                <br> Minima dolores enim unde natus qui totam quasi non!</p>
+            <p>Quidem autem repudiandae necessitatibus numquam natus soluta, quod tempora eius sequi, unde deleniti id? Accusamus
+                consequuntur, provident sit eligendi culpa, libero ex sed dolores totam iusto deleniti delectus. Commodi,
+                harum.
+            </p>
+            <p>Vitae totam sint minima placeat doloremque voluptate tempore ipsa amet a magni impedit, sed iste facere cupiditate
+                consequuntur itaque earum delectus animi nulla qui non cum quisquam similique? Similique, laudantium.</p>
         </article>
         <article>
-            <h2>Uso de Listas</h2>
-                <h3>Vertebrados</h3>
-                <ul class="vertebrados">
-                    <li>Peces</li>
-                    <li>Reptiles</li>
-                        <ol>
-                            <li>serpientes</li>
-                            <li>lagartos</li>
-                            <li>cocodrilos</li>
-                            <li>tortugas</li>
-                        </ol>
-                    <li>Aves</li>
-                    <li>Mamiferos</li>
-                </ul>
-                <h3>No Vertebrados</h3>
+            <h2>Uso de listas. </h2>
+            <h3>Tipos de vertebrados</h3>
+            <ol class="vertebrados">
+                <li>Peces</li>
+                <li>Reptiles
+                    <ol type="I">
+                        <li>Tortugas</li>
+                        <li>Cocodrilos</li>
+                        <li>Lagartos</li>
+                        <li>Serpientes</li>
+                    </ol>
+                </li>
+
+            </ol>
+            <p>Finalmente están los vertebrados mas evoluciionados</p>
+            <ol start="3">
+                <li>Aves
+                    <ul>
+                        <li>Rapaces</li>
+                        <li>Pajaros</li>
+                    </ul>
+                </li>
+                <li>Mamiferos</li>
+            </ol>
+
+            <h3>Definiciones</h3>
+            <dl>
+                <div>
+                    <dt>HTML: </dt>
+                    <dd>lenguaje de marcas</dd>
+                </div>
+                <div>
+                    <dt>CSS:</dt>
+                    <dd>lenjuaje de estilos</dd>
+                </div>
+                <div>
+                    <dt>JS:</dt>
+                    <dd>lenguaje de scripts</dd>
+                </div>
+            </dl>
         </article>
-        <article></article>
+        <article>
+            <h2>Desplegables</h2>
+            <details>                
+                <summary>Diseño Web</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id maiores odio illo tenetur ea nisi velit! Cumque corporis impedit debitis sit, dolorem excepturi, incidunt omnis, vero molestiae esse magnam quisquam.</p>
+            </details>
+            <dialog open class="verde">
+                <p>Esto es información extra</p>
+                <button>Cerrar</button>
+            </dialog>
+            <button>Más información</button>
+
+
+        </article>
     </main>
     <aside></aside>
-    <footer><footer class="footer">
-            <p>&copy; alex
-            </p>
-            <address> <p>Madrid
-            </p>    
-            </address>
-        </footer></footer>
+    <footer class="footer">
+        <address>
+            Alejandro Cerezo - alce65@hotmail.es
+        </address>
+        <p>&alex; Training - 2017</p>
+    </footer>
 </body>
+
+</html>

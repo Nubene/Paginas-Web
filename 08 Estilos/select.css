@@ -1,0 +1,18 @@
+ul { list-style: none;
+    }
+nav li {display: inline-block}
+.art1 h3{
+    color: brown;
+}
+nav a { text-decoration: none;
+    color: maroon;
+}
+h2,.verde{
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold
+}
+h1 {color: rgb(60, 255, 0)}
+h2 {color: rgb(255, 0, 149)}
+h3 {color: blue}
+.verde {color: limegreen} 

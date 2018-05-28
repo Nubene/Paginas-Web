@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+header{
+    padding: 3rem;
+    margin: 1rem;
+    border: 0.1rem solid; 
+    background-color: blue;
+    color: aliceblue
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding: 1rem;
+    margin: 1rem;
+    width: 40%;
+    border: 0.1rem solid; 
+    background-color: bisque;
+}
+
+.vida {
+   /*  border: 0.1rem solid; */
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(129, 127, 255);
+}
+.obras{
+    
+    margin: 1rem;
+    padding: 1rem;
+    background-color: aquamarine;
+    width: calc(calc(100% - calc(var(--margen)*3))/4);
+    float: left;
+    
+    }
+    
+p:not(:last-child) {
+        margin-right: var(--margen);
+    } 
+    
+p:first-child {
+        /* border-left: 1px solid;  */
+    }
+    
+p:nth-child(odd) {
+        background-color: aqua;
+        border: 1px solid bisque;
+    }
+    
+p:nth-child(even) {
+        background-color: bisque;
+        border: 1px solid aqua;
+    }
+}

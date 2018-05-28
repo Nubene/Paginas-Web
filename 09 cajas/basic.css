@@ -1,0 +1,11 @@
+body{
+    padding: 0rem;
+    margin: 0rem;}
+p{
+    padding: 1rem;
+    margin: 1rem;
+    width:40%;
+    border:0.1rem solid red;
+    background-color: bisque
+    
+}

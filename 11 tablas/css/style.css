@@ -1,0 +1,18 @@
+th,td{
+    padding: 1rem 2rem 1rem 2rem;
+}
+th{
+    background-color: blue;
+    color: bisque
+}
+td{
+    background-color: bisque;
+    color: blue
+}
+body{
+    color: blue
+}
+
+table.destinos td:after {
+    content: "%"
+}

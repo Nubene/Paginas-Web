@@ -1,0 +1,14 @@
+div {
+    width: 30%;
+    max-width: 300px;
+    border: 1px solid;
+}
+figure {
+    width: 30%;
+    max-width: 300px;
+    border: 1px solid;
+}
+img {
+    width: 100%;
+    display: block 
+}
